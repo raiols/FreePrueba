@@ -1,0 +1,85 @@
+:root {
+    /*elementos que no existen almacena como variales que no existen como custom properties
+    */
+    --blanco: #ffffff;/*color blanco puede ser mayosculas o minúosculas*/
+    --oscuro: #00000021;
+    --primario: #ffc107; 
+    --secundario: #0097A7;
+    --gris: #757575;
+
+    --fuente-principal: 3.8rem;
+}
+
+
+
+html{
+    font-size: 62.5%;
+
+}
+body{
+    font-size: 16px;
+    font-family: 'Krub', sans-serif; 
+}
+
+.nav-bg{
+    background-color:var(--secundario) ;    
+}
+.navegacion-principal {
+    
+    display: flex;
+    flex-direction: column;
+   
+}
+@media (min-width: 768px){
+ .navegacion-principal{
+    flex-direction: row;
+    justify-content: space-between ;/* para mover contenido horizontalmente*/
+    
+ }
+}
+
+.navegacion-principal a{ 
+    display: block;
+    text-align: center;
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+ 
+}
+.navegacion-principal a:hover{
+    background-color: var(--primario);/*para el color de acercar*/
+    color: var(--oscuro);
+}
+p{
+    background-color: var(--primario);
+}
+.titulo{
+    text-align:center;
+    font-size: 3.8rem;/* 1rem = 10px  para que se adapate a mas navegagodres el sisito web*/ 
+}
+
+.contenedor{
+    width: 120rem;
+    margin: 0 auto;
+
+}
+
+.titulo span{
+    font-size: 2rem;
+    color: blue;
+}
+body{
+    background-color: yellow;
+    font-size: 3rem;
+}
+
+.hero{
+    background-image: url(../img/hero.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:450px;
+    padding: 20px;
+}
+
